@@ -9,5 +9,5 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
     && apk del ${PHPIZE_DEPS}
 
 # 复制准备好的配置文件
-COPY ./config/php.ini /usr/local/etc/php/conf.d/
-COPY ./config/opcache-recommended.ini /usr/local/etc/php/conf.d/
+# COPY ./config/php.ini /usr/local/etc/php/conf.d/
+# COPY ./config/opcache-recommended.ini /usr/local/etc/php/conf.d/
